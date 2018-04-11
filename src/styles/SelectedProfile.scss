@@ -1,0 +1,10 @@
+%border {
+    border: 5px solid rgb(220,220,220);
+    border-style: groove;
+}
+
+.SingleProfileManagementPanel {
+    @extend %border;
+    display: flex;
+    width: 32vw;
+}

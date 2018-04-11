@@ -1,0 +1,18 @@
+@import '~antd/dist/antd.css';
+
+.App {
+    display: flex;
+    flex-direction: column;
+    p {
+        text-align: center;
+    }
+    .UpperAppContainer {
+        display: flex;
+        height: 50vh;
+    }
+    .LowerAppContainer {
+        display: flex;
+        height: 40vh;
+        margin-top: -5px;
+    }
+}

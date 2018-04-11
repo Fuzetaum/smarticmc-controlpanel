@@ -1,0 +1,55 @@
+%border {
+    border: 5px solid rgb(220,220,220);
+    border-style: groove;
+}
+
+.ItemControlPanel {
+    @extend %border;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 35vw;
+    padding: 0.2vw;
+    margin-left: -5px;
+    > p {
+        align-self: center;
+    }
+    .CreateItemField {
+        display: flex;
+        border-bottom: 1px solid rgb(200,200,200);
+        .InputFieldTagsContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .InputFieldInputContainer {
+            display: flex;
+            flex-direction: column;
+            margin-left: 0.2vw;
+        }
+        Button {
+            align-self: center;
+            border-radius: 10px;
+            margin-left: 0.3vw;
+        }
+    }
+    .ItemListContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        #ItemListHeader {
+            align-self: center;
+        }
+        .Item {
+            display: flex;
+            align-items: baseline;
+            p {
+                padding-left: 0.3vw;
+                margin: 0;
+                text-align: left;
+            }
+        }
+    }
+}

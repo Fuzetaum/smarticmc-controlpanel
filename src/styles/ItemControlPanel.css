@@ -1,0 +1,43 @@
+.ItemControlPanel {
+  border: 5px solid gainsboro;
+  border-style: groove; }
+
+.ItemControlPanel {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 35vw;
+  padding: 0.2vw;
+  margin-left: -5px; }
+  .ItemControlPanel > p {
+    align-self: center; }
+  .ItemControlPanel .CreateItemField {
+    display: flex;
+    border-bottom: 1px solid #c8c8c8; }
+    .ItemControlPanel .CreateItemField .InputFieldTagsContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+    .ItemControlPanel .CreateItemField .InputFieldInputContainer {
+      display: flex;
+      flex-direction: column;
+      margin-left: 0.2vw; }
+    .ItemControlPanel .CreateItemField Button {
+      align-self: center;
+      border-radius: 10px;
+      margin-left: 0.3vw; }
+  .ItemControlPanel .ItemListContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%; }
+    .ItemControlPanel .ItemListContainer #ItemListHeader {
+      align-self: center; }
+    .ItemControlPanel .ItemListContainer .Item {
+      display: flex;
+      align-items: baseline; }
+      .ItemControlPanel .ItemListContainer .Item p {
+        padding-left: 0.3vw;
+        margin: 0;
+        text-align: left; }

@@ -1,0 +1,59 @@
+%border {
+    border: 5px solid rgb(220,220,220);
+    border-style: groove;
+}
+
+.ProfileControlPanel {
+    @extend %border;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 32vw;
+    padding-left: 0.2vw;    
+    > p {
+        align-self: center;
+    }
+    .CreateProfileField {
+        display: flex;
+        border-bottom: 1px solid rgb(200,200,200);
+        .InputFieldTagsContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .InputFieldInputContainer {
+            display: flex;
+            flex-direction: column;
+            margin-left: 0.2vw;
+        }
+        Button {
+            align-self: center;
+            border-radius: 10px;
+            margin-left: 0.3vw;
+        }
+    }
+    .ProfileListContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        flex: 1;
+        overflow: auto;
+        margin: 0;
+        #ProfileListHeader {
+            align-self: center;
+        }
+        .ProfileItem {
+            display: flex;
+            align-items: baseline;
+            + .ProfileItem {
+                margin-top: 3vh;
+            }
+            p {
+                padding-left: 0.3vw;
+                margin: 0;
+            }
+        }
+    }
+}

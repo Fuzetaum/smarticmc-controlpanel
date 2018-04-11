@@ -1,0 +1,46 @@
+.ProfileControlPanel {
+  border: 5px solid gainsboro;
+  border-style: groove; }
+
+.ProfileControlPanel {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 32vw;
+  padding-left: 0.2vw; }
+  .ProfileControlPanel > p {
+    align-self: center; }
+  .ProfileControlPanel .CreateProfileField {
+    display: flex;
+    border-bottom: 1px solid #c8c8c8; }
+    .ProfileControlPanel .CreateProfileField .InputFieldTagsContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+    .ProfileControlPanel .CreateProfileField .InputFieldInputContainer {
+      display: flex;
+      flex-direction: column;
+      margin-left: 0.2vw; }
+    .ProfileControlPanel .CreateProfileField Button {
+      align-self: center;
+      border-radius: 10px;
+      margin-left: 0.3vw; }
+  .ProfileControlPanel .ProfileListContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    flex: 1;
+    overflow: auto;
+    margin: 0; }
+    .ProfileControlPanel .ProfileListContainer #ProfileListHeader {
+      align-self: center; }
+    .ProfileControlPanel .ProfileListContainer .ProfileItem {
+      display: flex;
+      align-items: baseline; }
+      .ProfileControlPanel .ProfileListContainer .ProfileItem + .ProfileItem {
+        margin-top: 3vh; }
+      .ProfileControlPanel .ProfileListContainer .ProfileItem p {
+        padding-left: 0.3vw;
+        margin: 0; }

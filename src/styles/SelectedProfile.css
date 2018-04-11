@@ -1,0 +1,7 @@
+.SingleProfileManagementPanel {
+  border: 5px solid gainsboro;
+  border-style: groove; }
+
+.SingleProfileManagementPanel {
+  display: flex;
+  width: 32vw; }
